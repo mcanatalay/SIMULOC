@@ -1,19 +1,23 @@
 import unittest
-from simuloc.signal import Generator
+from simuloc.signal import SignalGenerator
 
-class GeneratorTestCase(unittest.TestCase):
+class SignalGeneratorTestCase(unittest.TestCase):
     """GeneratorTestCase tests the generator class."""
 
     def setUp(self):
-        """Creates a instance of the generator class."""
-        self.cinst = Generator()
+        pass
 
     def tearDown(self):
         pass
 
     def test_noise(self):
         """Tests the boundry of noise generator."""
-        self.assertTrue(self.cinst.noise(0.1) < 4)
+        self.assertTrue(SignalGenerator.noise(0.1) < 4)
+
+    def test_signal(self):
+        """Tests the boundry of signal generator."""
+        signal = SignalGenerator.signal(38.71, 2.2, 11.3)
+        self.assertTrue(signal < 0 and signal > -100)
 
 if __name__ == '__main__':
     unittest.main()

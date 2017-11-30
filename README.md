@@ -17,5 +17,6 @@ Followings are version differences of SIMULOC,
 > **0.0.1:**
 
 > - Main structure of the project created.
+> - Generator for Environment & Signal implimented.
 
 ----------

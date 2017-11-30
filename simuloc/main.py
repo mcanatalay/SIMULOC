@@ -1,4 +1,4 @@
-from signal import Generator
+from signal import SignalGenerator
 
 def main():
     """Main method of Localization Simulation"""

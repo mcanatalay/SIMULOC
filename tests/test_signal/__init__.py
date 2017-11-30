@@ -1,1 +1,1 @@
-"""Test class for Signal module."""
+"""Test module for Signal module."""
